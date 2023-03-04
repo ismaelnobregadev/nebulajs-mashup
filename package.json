@@ -9,9 +9,8 @@
     "qlik",
     "nebula"
   ],
-  "main": "src/server.js",
-  "scripts": {
-    "start": "node src/server.js",
+    "scripts": {
+    "start": "node src/server.js"
   },
   "dependencies": {
     "@nebula.js/sn-bar-chart": "^1.x",
