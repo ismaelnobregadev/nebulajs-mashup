@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
-const config = require("./configure");
-const connect = require("./connect");
-// const token = require("../token/token");
+const config = require("./config/config");
+
 
 app.use(express.static(__dirname));
 //console.log(token.getKey());
@@ -15,15 +14,11 @@ app.get("/mashup", (req, res) => {
 });
 
 
-app.get("/configure", (req, res) => {
+app.get("/config", (req, res) => {
   res.json(config);
   res.end();
 });
 
-app.get("/connect", (req, res) => {
-  res.json(connect);
-  res.end();
-});
 
 
 /* app.get("/token", (req, res) => {
@@ -32,11 +27,11 @@ app.get("/connect", (req, res) => {
   res.json({ token: genT });
 }); */
 
-/* app.get("/theme/:name", (req, res) => {
+ app.get("/themes/:name", (req, res) => {
   let themeFile = fs.readFileSync(`./themes/${req.params.name}.json`);
   res.json({ theme: JSON.parse(themeFile) });
   res.end();
-}); */
+}); 
 
 //create a server object:
 app.listen(8080); //the server object listens on port 8080
