@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const config = require("./config/config");
+const cors = require("cors");
+
+app.use(cors());
 
 
 app.use(express.static(__dirname));

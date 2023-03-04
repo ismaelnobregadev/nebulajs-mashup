@@ -9,7 +9,7 @@
     "qlik",
     "nebula"
   ],
-    "scripts": {
+  "scripts": {
     "start": "node src/server.js"
   },
   "dependencies": {
@@ -17,14 +17,15 @@
     "@nebula.js/sn-line-chart": "^1.24.0",
     "@nebula.js/stardust": "3.1.3",
     "@qlik/sdk": "^0.12.0",
+    "cors": "^2.8.5",
     "enigma.js": "^2.6.3",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "parcel": "^2.7.0"
   },
   "devDependencies": {
-    "nodemon": "1.18.4",
     "buffer": "^5.7.1",
+    "nodemon": "1.18.4",
     "process": "^0.11.10"
   }
 }
