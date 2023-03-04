@@ -16,7 +16,7 @@
   
     // Fetch the schema for communicating with Qlik's engine API
     const schema = await (
-      await fetch("https://unpkg.com/enigma.js/schemas/12.612.0.json")
+      await fetch("https://unpkg.com/enigma.js/schemas/12.20.0.json")
     ).json();
   
     // Create Qlik engine session
