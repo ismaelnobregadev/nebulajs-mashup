@@ -13,10 +13,17 @@ app.get("/mashup", (req, res) => {
   res.end();
 });
 
-/* app.get("/config", (req, res) => {
-  res.json(config);
+app.get("/configure", (req, res) => {
+  let mashConfig = fs.readFileSync("./src/configure.js", "utf8");
+  res.write(mashConfig);
   res.end();
-}); */
+}); 
+
+app.get("/connect", (req, res) => {
+  let mashConnect = fs.readFileSync("./src/connect.js", "utf8");
+  res.write(mashConnect);
+  res.end();
+}); 
 
 /* app.get("/token", (req, res) => {
   const ip = req.connection.remoteAddress;
