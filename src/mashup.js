@@ -10,7 +10,7 @@
  
   
     // Build the websocket URL to connect to the Qlik Sense applicaiton
-    const url = `wss://${config.tenantDomain}/app/${
+    const url = `ws://${config.tenantDomain}/app/${
       config.appId
     }`;
   
