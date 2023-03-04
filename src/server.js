@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
-// const config = require("../config/config");
+const config = require("./configure");
+const connect = require("./connect");
 // const token = require("../token/token");
 
 app.use(express.static(__dirname));
@@ -13,17 +14,17 @@ app.get("/mashup", (req, res) => {
   res.end();
 });
 
+
 app.get("/configure", (req, res) => {
-  let mashConfig = fs.readFileSync("./src/configure.js", "utf8");
-  res.write(mashConfig);
+  res.json(config);
   res.end();
-}); 
+});
 
 app.get("/connect", (req, res) => {
-  let mashConnect = fs.readFileSync("./src/connect.js", "utf8");
-  res.write(mashConnect);
+  res.json(connect);
   res.end();
-}); 
+});
+
 
 /* app.get("/token", (req, res) => {
   const ip = req.connection.remoteAddress;
