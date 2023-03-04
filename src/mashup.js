@@ -20,7 +20,7 @@
     ).json();
   
     // Create Qlik engine session
-    const session = window.enigma.create({ schema, url });
+    const session = window.enigma.create({ schema, url, createSocket: url => new WebSocket(url) });
   
     // Open the application
     const app = await (await session.open()).openDoc('96a7d192-860d-4ecc-90e7-a404e81154b2');
