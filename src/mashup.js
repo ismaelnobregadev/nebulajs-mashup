@@ -23,7 +23,7 @@
     const session = window.enigma.create({ schema, url });
   
     // Open the application
-    const app = await (await session.open()).openDoc(config.appId);
+    const app = await (await session.open()).openDoc('96a7d192-860d-4ecc-90e7-a404e81154b2');
   
     /********BE CAREFUL WHAT YOU DELETE ABOVE THIS LINE********/
     
