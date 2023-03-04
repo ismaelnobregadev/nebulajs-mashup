@@ -1,0 +1,23 @@
+body {
+    background: #eee;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .listbox {
+    margin: 12px 0px;
+    position: relative;
+  }
+
+  .object {
+    position: relative;
+    height: 600px;
+  }
+
+  .toolbar {
+    margin: 12px 0px;
+  }
