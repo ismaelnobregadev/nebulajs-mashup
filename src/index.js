@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { AuthType } from '@qlik/sdk';
+// import { AuthType } from '@qlik/sdk';
 import embed from './configure';
 import connect from './connect';
 
