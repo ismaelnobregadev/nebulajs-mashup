@@ -6,7 +6,7 @@ import connect from './connect';
 async function run() {
   const app = await connect({
     //connectionType: '<AuthType.SOME_CONNECTION_TYPE>',
-    url: 'qap.sebrae.com.br',
+    url: 'qap.sebrae.com.br/usina',
     appId: '96a7d192-860d-4ecc-90e7-a404e81154b2',
 
     // you should use only one of below keys
