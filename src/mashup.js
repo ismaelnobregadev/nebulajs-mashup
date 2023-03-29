@@ -25,6 +25,8 @@
     // Open the application
     const app = await (await session.open()).openDoc('96a7d192-860d-4ecc-90e7-a404e81154b2');
   
+  console.log(app);
+  
     /********BE CAREFUL WHAT YOU DELETE ABOVE THIS LINE********/
     
     const themeFile = await await fetch("themes/horizon").then((response) =>
