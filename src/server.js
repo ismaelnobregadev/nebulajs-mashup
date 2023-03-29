@@ -31,7 +31,7 @@ app.get("/config", (req, res) => {
 }); */
 
  app.get("/themes/:name", (req, res) => {
-  let themeFile = fs.readFileSync(`./themes/${req.params.name}.json`);
+  let themeFile = fs.readFileSync(`./src/themes/${req.params.name}.json`);
   res.json({ theme: JSON.parse(themeFile) });
   res.end();
 }); 
